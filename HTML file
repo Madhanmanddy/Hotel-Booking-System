@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking System</h1>
+    </header>
+    <main>
+        <section id="rooms">
+            <h2>Available Rooms</h2>
+            <div class="room">
+                <h3>Single Room</h3>
+                <p>Description: Cozy single room with a comfortable bed.</p>
+                <p>Price: $100 per night</p>
+            </div>
+            <div class="room">
+                <h3>Double Room</h3>
+                <p>Description: Spacious room with two beds and modern amenities.</p>
+                <p>Price: $150 per night</p>
+            </div>
+            <div class="room">
+                <h3>Suite</h3>
+                <p>Description: Luxurious suite with a separate living area.</p>
+                <p>Price: $250 per night</p>
+            </div>
+        </section>
+        <section id="booking">
+            <h2>Book a Room</h2>
+            <form>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+                
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Booking System</p>
+    </footer>
+</body>
+</html>
